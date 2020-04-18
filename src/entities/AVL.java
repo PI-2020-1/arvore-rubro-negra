@@ -64,12 +64,12 @@ public class AVL {
 		}
 	}
 	
-	public void insere(int valor, Node node, Node pai) {
+	public void insert(int valor, Node node, Node pai) {
 		if(node != null) {
 			if(valor < node.getKey()) {
-				insere(valor, node.getEsq(), node);
+				insert(valor, node.getEsq(), node);
 			}else {
-				insere(valor, node.getDir(), node);
+				insert(valor, node.getDir(), node);
 			}
 		}else {
 			Node novo = new Node();
